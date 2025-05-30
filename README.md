@@ -7,6 +7,8 @@ A simple Python project to detect drowsiness in real-time using your webcam, Ope
 ## 📦 Requirements
 
 Install dependencies using:
+
+```bash
 pip install -r requirements.txt
 
 🚀 How to Run
@@ -38,4 +40,4 @@ mediapipe
 numpy
 💡 winsound is built-in on Windows — no need to include it.
 
- (codee.py)
+                    (codee.py)
