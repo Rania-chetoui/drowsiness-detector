@@ -31,8 +31,6 @@ README.md → This documentation
 Inspired by common computer vision practices for real-time alert systems using MediaPipe and OpenCV.
 
 ### 📄 `requirements.txt`
-
-```txt
 opencv-python
 mediapipe
 numpy
