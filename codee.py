@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import time
-import winsound  # alert
+import winsound  
 
 # Initialize MediaPipe FaceMesh
 mp_face_mesh = mp.solutions.face_mesh
@@ -49,9 +49,9 @@ while cap.isOpened():
                 else:
                     elapsed_time = time.time() - start_time
                     if elapsed_time >= DROWSINESS_TIME_THRESHOLD:
-                        cv2.putText(frame, "⚠️ Somnolence détectée !", (50, 100),
+                        cv2.putText(frame, "Somnolence détectée !", (50, 100),
                                     cv2.FONT_HERSHEY_SIMPLEX, 1.2, (0, 0, 255), 3)
-                        print("🚨 ALERTE : Somnolence détectée !")
+                        print("ALERTE : Somnolence détectée !")
                         winsound.Beep(1000, 500)
             else:
                 start_time = None  
